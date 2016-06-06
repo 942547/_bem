@@ -1,0 +1,19 @@
+.top-line__li_theme_landing2top
+	&::before
+		content '['
+		display: inline-block
+		opacity: 0
+		margin-right 5px
+		transform: translateX(20px)
+		transition: transform .3s,opacity .2s,-webkit-transform .3s
+	&::after
+		content ']'
+		display: inline-block
+		opacity: 0
+		margin-left 5px
+		transform: translateX(-20px)
+		transition: transform .3s,opacity .2s,-webkit-transform .3s
+	&:hover
+		&::before, &::after
+			opacity 1
+			transform: translateX(0)
