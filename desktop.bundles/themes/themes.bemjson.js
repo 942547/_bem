@@ -255,7 +255,7 @@
 								mix: {block: 'button', elem: 'fa'},
 								tag: 'i'
 							},
-							url : '../../desktop.bundles/page2/page2.html',
+							url : '../../desktop.bundles/themes/themes.html',
 							text : 'Отправить'
 						}
 						]
@@ -468,25 +468,25 @@
 					{
 						block : 'button',
 						mods : { theme : 'the-sweet', type : 'link', bacground: 'green' },
-						url : '../../desktop.bundles/page2/page2.html',
+						url : '../../desktop.bundles/themes/themes.html',
 						text : 'Отправить'
 					},
 					{
 						block : 'button',
 						mods : { theme : 'the-sweet', type : 'link', bacground: 'purple' },
-						url : '../../desktop.bundles/page2/page2.html',
+						url : '../../desktop.bundles/themes/themes.html',
 						text : 'Отправить'
 					},
 					{
 						block : 'button',
 						mods : { theme : 'the-sweet', type : 'link', bacground: 'blue' },
-						url : '../../desktop.bundles/page2/page2.html',
+						url : '../../desktop.bundles/themes/themes.html',
 						text : 'Отправить'
 					},
 					{
 						block : 'button',
 						mods : { theme : 'the-sweet', type : 'link', bacground: 'dark-blue' },
-						url : '../../desktop.bundles/page2/page2.html',
+						url : '../../desktop.bundles/themes/themes.html',
 						text : 'Отправить'
 					}
 
@@ -714,7 +714,7 @@
 					{
 						block : 'button',
 						mods : { theme : 'landing2top', type : 'link'},
-						url : '../../desktop.bundles/page2/page2.html',
+						url : '../../desktop.bundles/themes/themes.html',
 						text : 'Отправить'
 					}
 					]
@@ -954,7 +954,7 @@
 					{
 						block : 'button',
 						mods : { theme : 'trofey', type : 'link' },
-						url : '../../desktop.bundles/page2/page2.html',
+						url : '../../desktop.bundles/themes/themes.html',
 						text : 'Отправить'
 					}
 					]
@@ -1186,7 +1186,7 @@
 					{
 						block : 'button',
 						mods : { theme : 'automagazin777', type : 'link' },
-						url : '../../desktop.bundles/page2/page2.html',
+						url : '../../desktop.bundles/themes/themes.html',
 						text : 'Отправить'
 					}
 					]
@@ -1444,7 +1444,7 @@
 								mix: {block: 'button', elem: 'fa'},
 								tag: 'i'
 							},
-							url : '../../desktop.bundles/page2/page2.html',
+							url : '../../desktop.bundles/themes/themes.html',
 							text : 'Отправить'
 						}
 						]

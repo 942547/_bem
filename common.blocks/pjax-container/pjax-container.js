@@ -924,4 +924,4 @@ $.support.pjax ? enable() : disable()
 })(jQuery);
 
 // Инициализация
-$(document).pjax('a', '.pjax-container');
+$(document).pjax('.pjax-container');
