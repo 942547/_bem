@@ -6,8 +6,8 @@
 	{elem: 'meta', attrs: {name: 'description', content: ''}},
 	{elem: 'meta', attrs: {name: 'viewport', content: 'width=device-width, initial-scale=1'}},
 	{elem: 'meta', attrs: {property: 'og:image', content: 'path/to/image.jpg'}},
-	{elem: 'css', url: 'themes.min.css'},
 	{elem: 'css', url: '../../libs/font-awesome/css/font-awesome.css'},
+	{elem: 'css', url: 'themes.min.css'},
 	{elem: 'link', attrs: {rel: 'apple-touch-icon', href: 'img/favicon/apple-touch-icon.png'}},
 	{elem: 'link', attrs: {rel: 'apple-touch-icon',size: '72x72' , href: 'img/favicon/apple-touch-icon-72x72.png'}},
 	{elem: 'link', attrs: {rel: 'apple-touch-icon',size: '114x114' , href: 'img/favicon/apple-touch-icon-114x114.png'}}
@@ -249,13 +249,14 @@
 						},
 						{
 							block : 'button',
+							id: 'js-ripple-btn',
 							mods : { theme : 'agro-wheel', type : 'link' },
 							icon: {
 								block: 'fa fa-paper-plane-o',
 								mix: {block: 'button', elem: 'fa'},
 								tag: 'i'
 							},
-							url : '../../desktop.bundles/themes/themes.html',
+							url : '#',
 							text : 'Отправить'
 						}
 						]
@@ -281,89 +282,55 @@
 	 ╚═╝   ╚═╝  ╚═╝╚══════╝    ╚══════╝ ╚══╝╚══╝ ╚══════╝╚══════╝   ╚═╝   
 	 */
 	 {
-	 	block: 'top-bar',
+	 	block: 'the-sweet',
 	 	content: [
 	 	{
+	 		block: 'top-bar',
+	 		content: [
+	 		{
 
-	 		block: 'top-line',
-	 		mods: {theme: 'the-sweet'},
-	 		content: [
-	 		{
-	 			elem: 'status',
-	 			content: 'Торта много не бывает...',
-	 		},
-	 		{
-	 			elem: 'mnu',
-	 			tag: 'ul',
+	 			block: 'top-line',
+	 			mods: {theme: 'the-sweet'},
 	 			content: [
 	 			{
-	 				elem: 'li',
-	 				content: [
-	 				{
-	 					block : 'link',
-	 					mix: {block: 'top-line', elem: 'a'},
-	 					url : 'tel:+79102200224',
-	 					content : '8 910 220 02 24'
-	 				}
-	 				]
+	 				elem: 'status',
+	 				content: 'Торта много не бывает...',
 	 			},
 	 			{
-	 				elem: 'li',
+	 				elem: 'mnu',
+	 				tag: 'ul',
 	 				content: [
 	 				{
-	 					block : 'link',
-	 					mix: {block: 'top-line', elem: 'a'},
-	 					url : 'mailto:info@landing2top.ru',
-	 					content : 'info@landing2top.ru'
-	 				}
-	 				]
-	 			},
-	 			{
-	 				elem: 'li',
-	 				content: [
-	 				{
-	 					block : 'link',
-	 					mix: {block: 'top-line', elem: 'a'},
-	 					url : '#',
-	 					content : 'Моё сообщество'
-	 				}
-	 				]
-	 			}
-	 			]
-	 		}
-	 		]
-	 	},
-	 	{
-	 		block: 'header',
-	 		mods: {theme: 'the-sweet'},
-	 		content: [
-	 		{
-	 			block : 'logo',
-	 			tag: 'a',
-	 			attrs: {href: '#'},
-	 			content: [
-	 			{
-	 				block: 'image',
-	 				mix: {block: 'logo', elem: 'image'},
-	 				alt: 'alt',
-	 				url: '../../img/the-sweet__logo.svg',
-	 			},
-	 			{
-	 				elem: 'texts',
-	 				mix: {block: 'logo', elem: 'texts'},
-	 				content: [
-	 				{
-	 					elem: 'text',
-	 					mix: {block: 'logo', elem: 'text'},
+	 					elem: 'li',
 	 					content: [
-	 					'Сладкие идеи'
+	 					{
+	 						block : 'link',
+	 						mix: {block: 'top-line', elem: 'a'},
+	 						url : 'tel:+79102200224',
+	 						content : '8 910 220 02 24'
+	 					}
 	 					]
 	 				},
 	 				{
-	 					elem: 'desc',
-	 					mix: {block: 'logo', elem: 'desc'},
+	 					elem: 'li',
 	 					content: [
-	 					'Торты на заказ'
+	 					{
+	 						block : 'link',
+	 						mix: {block: 'top-line', elem: 'a'},
+	 						url : 'mailto:info@landing2top.ru',
+	 						content : 'info@landing2top.ru'
+	 					}
+	 					]
+	 				},
+	 				{
+	 					elem: 'li',
+	 					content: [
+	 					{
+	 						block : 'link',
+	 						mix: {block: 'top-line', elem: 'a'},
+	 						url : '#',
+	 						content : 'Моё сообщество'
+	 					}
 	 					]
 	 				}
 	 				]
@@ -371,85 +338,122 @@
 	 			]
 	 		},
 	 		{
-	 			block: 'phone',
-	 			content: [
-	 			{
-	 				elem : 'number',
-	 				tag: 'a',
-	 				attrs: {href: 'tel:+79803218466'},
-	 				content : '8 980 321 84 66'
-	 			},
-
-	 			{
-	 				elem: 'desc',
-	 				content: ['пн-пт 10:00-18:00']
-	 			}
-	 			]
-	 		},
-	 		{
-	 			block: 'mnu',
+	 			block: 'header',
 	 			mods: {theme: 'the-sweet'},
-	 			tag: 'ul',
 	 			content: [
 	 			{
-	 				elem: 'li',
-	 				elemMods: {theme: 'the-sweet', bacground: 'green'},
-	 				tag: 'li',
+	 				block : 'logo',
+	 				tag: 'a',
+	 				attrs: {href: '#'},
 	 				content: [
 	 				{
-	 					elem : 'a',
-	 					tag: 'a',
-	 					attrs: {href: '#'},
-	 					content : ['Торты']
+	 					block: 'image',
+	 					mix: {block: 'logo', elem: 'image'},
+	 					alt: 'alt',
+	 					url: '../../img/the-sweet__logo.svg',
+	 				},
+	 				{
+	 					elem: 'texts',
+	 					mix: {block: 'logo', elem: 'texts'},
+	 					content: [
+	 					{
+	 						elem: 'text',
+	 						mix: {block: 'logo', elem: 'text'},
+	 						content: [
+	 						'Сладкие идеи'
+	 						]
+	 					},
+	 					{
+	 						elem: 'desc',
+	 						mix: {block: 'logo', elem: 'desc'},
+	 						content: [
+	 						'Торты на заказ'
+	 						]
+	 					}
+	 					]
 	 				}
 	 				]
 	 			},
 	 			{
-	 				elem: 'li',
-	 				elemMods: {theme: 'the-sweet', bacground: 'purple'},
-	 				tag: 'li',
+	 				block: 'phone',
 	 				content: [
 	 				{
-	 					elem : 'a',
+	 					elem : 'number',
 	 					tag: 'a',
-	 					attrs: {href: '#'},
-	 					content : ['Начинки']
+	 					attrs: {href: 'tel:+79803218466'},
+	 					content : '8 980 321 84 66'
+	 				},
+
+	 				{
+	 					elem: 'desc',
+	 					content: ['пн-пт 10:00-18:00']
 	 				}
 	 				]
 	 			},
 	 			{
-	 				elem: 'li',
-	 				elemMods: {theme: 'the-sweet', bacground: 'blue'},
-	 				tag: 'li',
+	 				block: 'mnu',
+	 				mods: {theme: 'the-sweet'},
+	 				tag: 'ul',
 	 				content: [
 	 				{
-	 					elem : 'a',
-	 					tag: 'a',
-	 					attrs: {href: '#'},
-	 					content : ['Отзывы']
-	 				}
-	 				]
-	 			},
-	 			{
-	 				elem: 'li',
-	 				elemMods: {theme: 'the-sweet', bacground: 'dark-blue'},
-	 				tag: 'li',
-	 				content: [
+	 					elem: 'li',
+	 					elemMods: {theme: 'the-sweet', bacground: 'green'},
+	 					tag: 'li',
+	 					content: [
+	 					{
+	 						elem : 'a',
+	 						tag: 'a',
+	 						attrs: {href: '#'},
+	 						content : ['Торты']
+	 					}
+	 					]
+	 				},
 	 				{
-	 					elem : 'a',
-	 					tag: 'a',
-	 					attrs: {href: '#'},
-	 					content : ['Контакты']
+	 					elem: 'li',
+	 					elemMods: {theme: 'the-sweet', bacground: 'purple'},
+	 					tag: 'li',
+	 					content: [
+	 					{
+	 						elem : 'a',
+	 						tag: 'a',
+	 						attrs: {href: '#'},
+	 						content : ['Начинки']
+	 					}
+	 					]
+	 				},
+	 				{
+	 					elem: 'li',
+	 					elemMods: {theme: 'the-sweet', bacground: 'blue'},
+	 					tag: 'li',
+	 					content: [
+	 					{
+	 						elem : 'a',
+	 						tag: 'a',
+	 						attrs: {href: '#'},
+	 						content : ['Отзывы']
+	 					}
+	 					]
+	 				},
+	 				{
+	 					elem: 'li',
+	 					elemMods: {theme: 'the-sweet', bacground: 'dark-blue'},
+	 					tag: 'li',
+	 					content: [
+	 					{
+	 						elem : 'a',
+	 						tag: 'a',
+	 						attrs: {href: '#'},
+	 						content : ['Контакты']
+	 					}
+	 					]
 	 				}
 	 				]
 	 			}
 	 			]
+
 	 		}
 	 		]
-
-	 	}
-	 	]
-	 },
+	 	},
 	// ##########################################################
 	{
 		block: 'first-screen',
@@ -468,25 +472,25 @@
 					{
 						block : 'button',
 						mods : { theme : 'the-sweet', type : 'link', bacground: 'green' },
-						url : '../../desktop.bundles/themes/themes.html',
+						url : '#',
 						text : 'Отправить'
 					},
 					{
 						block : 'button',
 						mods : { theme : 'the-sweet', type : 'link', bacground: 'purple' },
-						url : '../../desktop.bundles/themes/themes.html',
+						url : '#',
 						text : 'Отправить'
 					},
 					{
 						block : 'button',
 						mods : { theme : 'the-sweet', type : 'link', bacground: 'blue' },
-						url : '../../desktop.bundles/themes/themes.html',
+						url : '#',
 						text : 'Отправить'
 					},
 					{
 						block : 'button',
 						mods : { theme : 'the-sweet', type : 'link', bacground: 'dark-blue' },
-						url : '../../desktop.bundles/themes/themes.html',
+						url : '#',
 						text : 'Отправить'
 					}
 
@@ -508,8 +512,10 @@
 		]
 	}
 	]
-},
+}
 
+]
+},
 
 /*
 ██╗      █████╗ ███╗   ██╗██████╗ ██╗███╗   ██╗ ██████╗ ██████╗ ████████╗ ██████╗ ██████╗ 
@@ -519,184 +525,188 @@
 ███████╗██║  ██║██║ ╚████║██████╔╝██║██║ ╚████║╚██████╔╝███████╗   ██║   ╚██████╔╝██║     
 ╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝ ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝   ╚═╝    ╚═════╝ ╚═╝     
 */
+
 {
-	block: 'top-bar',
+	block: 'landing2top',
 	content: [
 	{
-
-		block: 'top-line',
-		mods: {theme: 'landing2top'},
+		block: 'top-bar',
 		content: [
 		{
-			elem: 'status',
-			elemMods: {theme: 'landing2top'},
-			content: 'Город засыпает, просыпаются сеошники...',
-		},
-		{
-			elem: 'mnu',
-			tag: 'ul',
+
+			block: 'top-line',
+			mods: {theme: 'landing2top'},
 			content: [
 			{
-				elem: 'li',
+				elem: 'status',
 				elemMods: {theme: 'landing2top'},
-				content: [
-				{
-					block : 'link',
-					mix: {block: 'top-line', elem: 'a'},
-					url : 'tel:+79102200224',
-					content : '8 910 220 02 24'
-				}
-				]
+				content: 'Город засыпает, просыпаются сеошники...',
 			},
 			{
-				elem: 'li',
-				elemMods: {theme: 'landing2top'},
+				elem: 'mnu',
+				tag: 'ul',
 				content: [
 				{
-					block : 'link',
-					mix: {block: 'top-line', elem: 'a'},
-					url : 'mailto:info@landing2top.ru',
-					content : 'info@landing2top.ru'
-				}
-				]
-			},
-			{
-				elem: 'li',
-				elemMods: {theme: 'landing2top'},
-				content: [
+					elem: 'li',
+					elemMods: {theme: 'landing2top'},
+					content: [
+					{
+						block : 'link',
+						mix: {block: 'top-line', elem: 'a'},
+						url : 'tel:+79102200224',
+						content : '8 910 220 02 24'
+					}
+					]
+				},
 				{
-					block : 'link',
-					mix: {block: 'top-line', elem: 'a'},
-					url : '#',
-					content : 'Моё сообщество'
+					elem: 'li',
+					elemMods: {theme: 'landing2top'},
+					content: [
+					{
+						block : 'link',
+						mix: {block: 'top-line', elem: 'a'},
+						url : 'mailto:info@landing2top.ru',
+						content : 'info@landing2top.ru'
+					}
+					]
+				},
+				{
+					elem: 'li',
+					elemMods: {theme: 'landing2top'},
+					content: [
+					{
+						block : 'link',
+						mix: {block: 'top-line', elem: 'a'},
+						url : '#',
+						content : 'Моё сообщество'
+					}
+					]
 				}
 				]
 			}
 			]
+		},
+		{
+			block: 'header',
+			mods: {theme: 'landing2top'},
+			content: [
+			{
+				block : 'logo',
+				tag: 'a',
+				attrs: {href: '#'},
+				content: [
+				{
+					block: 'image',
+					mix: {block: 'logo', elem: 'image'},
+					alt: 'alt',
+					url: '../../img/landing2top__logo.svg',
+				},
+				{
+					elem: 'texts',
+					mix: {block: 'logo', elem: 'texts'},
+					content: [
+					{
+						elem: 'text',
+						elemMods: {theme: 'landing2top'},
+						content: 'Landing2Top'
+					},
+					]
+				}
+				]
+			},
+			{
+				block: 'phone',
+				content: [
+				{
+					elem : 'number',
+					tag: 'a',
+					elemMods: {theme: 'landing2top'},
+					attrs: {href: 'tel:+79102200224'},
+					content : '8 910 220 02 24'
+				},
+
+				{
+					elem: 'desc',
+					content: ['пн-пт 12:00-19:00']
+				}
+				]
+			},
+			{
+				block: 'mnu',
+				tag: 'ul',
+				content: [
+				{
+					elem: 'li',
+					elemMods: {theme: 'landing2top'},
+					tag: 'li',
+					content: [
+					{
+						elem : 'a',
+						tag: 'a',
+						attrs: {href: '#'},
+						content : ['Главная']
+					}
+					]
+				},
+				{
+					elem: 'li',
+					elemMods: {theme: 'landing2top'},
+					tag: 'li',
+					content: [
+					{
+						elem : 'a',
+						tag: 'a',
+						attrs: {href: '#'},
+						content : ['Колеса']
+					}
+					]
+				},
+				{
+					elem: 'li',
+					elemMods: {theme: 'landing2top'},
+					tag: 'li',
+					content: [
+					{
+						elem : 'a',
+						tag: 'a',
+						attrs: {href: '#'},
+						content : ['Шины']
+					}
+					]
+				},
+				{
+					elem: 'li',
+					elemMods: {theme: 'landing2top'},
+					tag: 'li',
+					content: [
+					{
+						elem : 'a',
+						tag: 'a',
+						attrs: {href: '#'},
+						content : ['Компания']
+					}
+					]
+				},
+				{
+					elem: 'li',
+					elemMods: {theme: 'landing2top'},
+					tag: 'li',
+					content: [
+					{
+						elem : 'a',
+						tag: 'a',
+						attrs: {href: '#'},
+						content : ['Контакты']
+					}
+					]
+				}
+				]
+			}
+			]
+
 		}
 		]
 	},
-	{
-		block: 'header',
-		mods: {theme: 'landing2top'},
-		content: [
-		{
-			block : 'logo',
-			tag: 'a',
-			attrs: {href: '#'},
-			content: [
-			{
-				block: 'image',
-				mix: {block: 'logo', elem: 'image'},
-				alt: 'alt',
-				url: '../../img/landing2top__logo.svg',
-			},
-			{
-				elem: 'texts',
-				mix: {block: 'logo', elem: 'texts'},
-				content: [
-				{
-					elem: 'text',
-					elemMods: {theme: 'landing2top'},
-					content: 'Landing2Top'
-				},
-				]
-			}
-			]
-		},
-		{
-			block: 'phone',
-			content: [
-			{
-				elem : 'number',
-				tag: 'a',
-				elemMods: {theme: 'landing2top'},
-				attrs: {href: 'tel:+79102200224'},
-				content : '8 910 220 02 24'
-			},
-
-			{
-				elem: 'desc',
-				content: ['пн-пт 12:00-19:00']
-			}
-			]
-		},
-		{
-			block: 'mnu',
-			tag: 'ul',
-			content: [
-			{
-				elem: 'li',
-				elemMods: {theme: 'landing2top'},
-				tag: 'li',
-				content: [
-				{
-					elem : 'a',
-					tag: 'a',
-					attrs: {href: '#'},
-					content : ['Главная']
-				}
-				]
-			},
-			{
-				elem: 'li',
-				elemMods: {theme: 'landing2top'},
-				tag: 'li',
-				content: [
-				{
-					elem : 'a',
-					tag: 'a',
-					attrs: {href: '#'},
-					content : ['Колеса']
-				}
-				]
-			},
-			{
-				elem: 'li',
-				elemMods: {theme: 'landing2top'},
-				tag: 'li',
-				content: [
-				{
-					elem : 'a',
-					tag: 'a',
-					attrs: {href: '#'},
-					content : ['Шины']
-				}
-				]
-			},
-			{
-				elem: 'li',
-				elemMods: {theme: 'landing2top'},
-				tag: 'li',
-				content: [
-				{
-					elem : 'a',
-					tag: 'a',
-					attrs: {href: '#'},
-					content : ['Компания']
-				}
-				]
-			},
-			{
-				elem: 'li',
-				elemMods: {theme: 'landing2top'},
-				tag: 'li',
-				content: [
-				{
-					elem : 'a',
-					tag: 'a',
-					attrs: {href: '#'},
-					content : ['Контакты']
-				}
-				]
-			}
-			]
-		}
-		]
-
-	}
-	]
-},
 	// ##########################################################
 	{
 		block: 'first-screen',
@@ -714,7 +724,7 @@
 					{
 						block : 'button',
 						mods : { theme : 'landing2top', type : 'link'},
-						url : '../../desktop.bundles/themes/themes.html',
+						url : '#',
 						text : 'Отправить'
 					}
 					]
@@ -731,7 +741,9 @@
 			]
 		}
 		]
-	},
+	}
+	]
+},
 
 
 
@@ -744,100 +756,60 @@
 	 ██║   ██║  ██║╚██████╔╝██║     ███████╗   ██║   
 	 ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚══════╝   ╚═╝   
 	 */
-
 	 {
-	 	block: 'top-bar',
+	 	block: 'trofey',
 	 	content: [
 	 	{
+	 		block: 'top-bar',
+	 		content: [
+	 		{
 
-	 		block: 'top-line',
-	 		mods: {theme: 'trofey'},
-	 		content: [
-	 		{
-	 			elem: 'status',
-	 			elemMods: {theme: 'trofey'},
-	 			content: 'Город засыпает, просыпаются сеошники...',
-	 		},
-	 		{
-	 			elem: 'mnu',
-	 			tag: 'ul',
+	 			block: 'top-line',
+	 			mods: {theme: 'trofey'},
 	 			content: [
 	 			{
-	 				elem: 'li',
+	 				elem: 'status',
 	 				elemMods: {theme: 'trofey'},
-	 				content: [
-	 				{
-	 					block : 'link',
-	 					mix: {block: 'top-line', elem: 'a'},
-	 					url : 'tel:+79102200224',
-	 					content : '8 910 220 02 24'
-	 				}
-	 				]
+	 				content: 'Город засыпает, просыпаются сеошники...',
 	 			},
 	 			{
-	 				elem: 'li',
-	 				elemMods: {theme: 'trofey'},
+	 				elem: 'mnu',
+	 				tag: 'ul',
 	 				content: [
 	 				{
-	 					block : 'link',
-	 					mix: {block: 'top-line', elem: 'a'},
-	 					url : 'mailto:info@trofey.ru',
-	 					content : 'info@trofey.ru'
-	 				}
-	 				]
-	 			},
-	 			{
-	 				elem: 'li',
-	 				elemMods: {theme: 'trofey'},
-	 				content: [
-	 				{
-	 					block : 'link',
-	 					mix: {block: 'top-line', elem: 'a'},
-	 					url : '#',
-	 					content : 'Моё сообщество'
-	 				}
-	 				]
-	 			}
-	 			]
-	 		}
-	 		]
-	 	},
-	 	{
-	 		block: 'header',
-	 		mods: {theme: 'trofey'},
-	 		content: [
-	 		{
-	 			block : 'logo',
-	 			tag: 'a',
-	 			attrs: {href: '#'},
-	 			content: [
-	 			{
-	 				block: 'image',
-	 				mix: {block: 'logo', elem: 'image'},
-	 				alt: 'alt',
-	 				url: '../../img/trofey__logo.svg',
-	 			},
-	 			{
-	 				elem: 'texts',
-	 				elemMods: {theme: 'trofey'},
-	 				content: [
-	 				{
-	 					elem: 'text',
-	 					elemMods: {theme: 'trofey'},
-	 					content: 'Трофей'
-	 				},
-	 				{
-	 					block : 'image',
-	 					url : '../../img/trofey__line.svg',
-	 					mix: {block: 'logo', elem: 'trofey-line'},
-	 					alt : 'line'
-	 				},
-	 				{
-	 					elem: 'desc',
-	 					mix: {block: 'logo', elem: 'desc'},
+	 					elem: 'li',
 	 					elemMods: {theme: 'trofey'},
 	 					content: [
-	 					'ресторан и пиццерия'
+	 					{
+	 						block : 'link',
+	 						mix: {block: 'top-line', elem: 'a'},
+	 						url : 'tel:+79102200224',
+	 						content : '8 910 220 02 24'
+	 					}
+	 					]
+	 				},
+	 				{
+	 					elem: 'li',
+	 					elemMods: {theme: 'trofey'},
+	 					content: [
+	 					{
+	 						block : 'link',
+	 						mix: {block: 'top-line', elem: 'a'},
+	 						url : 'mailto:info@trofey.ru',
+	 						content : 'info@trofey.ru'
+	 					}
+	 					]
+	 				},
+	 				{
+	 					elem: 'li',
+	 					elemMods: {theme: 'trofey'},
+	 					content: [
+	 					{
+	 						block : 'link',
+	 						mix: {block: 'top-line', elem: 'a'},
+	 						url : '#',
+	 						content : 'Моё сообщество'
+	 					}
 	 					]
 	 				}
 	 				]
@@ -845,131 +817,175 @@
 	 			]
 	 		},
 	 		{
-	 			block: 'phone',
+	 			block: 'header',
+	 			mods: {theme: 'trofey'},
 	 			content: [
 	 			{
-	 				elem : 'number',
+	 				block : 'logo',
 	 				tag: 'a',
-	 				elemMods: {theme: 'trofey'},
-	 				attrs: {href: 'tel:+79102200224'},
-	 				content : '8 910 220 02 24'
+	 				attrs: {href: '#'},
+	 				content: [
+	 				{
+	 					block: 'image',
+	 					mix: {block: 'logo', elem: 'image'},
+	 					alt: 'alt',
+	 					url: '../../img/trofey__logo.svg',
+	 				},
+	 				{
+	 					elem: 'texts',
+	 					elemMods: {theme: 'trofey'},
+	 					content: [
+	 					{
+	 						elem: 'text',
+	 						elemMods: {theme: 'trofey'},
+	 						content: 'Трофей'
+	 					},
+	 					{
+	 						block : 'image',
+	 						url : '../../img/trofey__line.svg',
+	 						mix: {block: 'logo', elem: 'trofey-line'},
+	 						alt : 'line'
+	 					},
+	 					{
+	 						elem: 'desc',
+	 						mix: {block: 'logo', elem: 'desc'},
+	 						elemMods: {theme: 'trofey'},
+	 						content: [
+	 						'ресторан и пиццерия'
+	 						]
+	 					}
+	 					]
+	 				}
+	 				]
 	 			},
+	 			{
+	 				block: 'phone',
+	 				content: [
+	 				{
+	 					elem : 'number',
+	 					tag: 'a',
+	 					elemMods: {theme: 'trofey'},
+	 					attrs: {href: 'tel:+79102200224'},
+	 					content : '8 910 220 02 24'
+	 				},
 
+	 				{
+	 					elem: 'desc',
+	 					content: ['пн-вс 12:00-00:00']
+	 				}
+	 				]
+	 			},
 	 			{
-	 				elem: 'desc',
-	 				content: ['пн-вс 12:00-00:00']
+	 				block: 'mnu',
+	 				tag: 'ul',
+	 				content: [
+	 				{
+	 					elem: 'li',
+	 					elemMods: {theme: 'trofey'},
+	 					tag: 'li',
+	 					content: [
+	 					{
+	 						elem : 'a',
+	 						tag: 'a',
+	 						attrs: {href: '#'},
+	 						content : ['Главная']
+	 					}
+	 					]
+	 				},
+	 				{
+	 					elem: 'li',
+	 					elemMods: {theme: 'trofey'},
+	 					tag: 'li',
+	 					content: [
+	 					{
+	 						elem : 'a',
+	 						tag: 'a',
+	 						attrs: {href: '#'},
+	 						content : ['Колеса']
+	 					}
+	 					]
+	 				},
+	 				{
+	 					elem: 'li',
+	 					elemMods: {theme: 'trofey'},
+	 					tag: 'li',
+	 					content: [
+	 					{
+	 						elem : 'a',
+	 						tag: 'a',
+	 						attrs: {href: '#'},
+	 						content : ['Шины']
+	 					}
+	 					]
+	 				},
+	 				{
+	 					elem: 'li',
+	 					elemMods: {theme: 'trofey'},
+	 					tag: 'li',
+	 					content: [
+	 					{
+	 						elem : 'a',
+	 						tag: 'a',
+	 						attrs: {href: '#'},
+	 						content : ['Компания']
+	 					}
+	 					]
+	 				},
+	 				{
+	 					elem: 'li',
+	 					elemMods: {theme: 'trofey'},
+	 					tag: 'li',
+	 					content: [
+	 					{
+	 						elem : 'a',
+	 						tag: 'a',
+	 						attrs: {href: '#'},
+	 						content : ['Контакты']
+	 					}
+	 					]
+	 				}
+	 				]
 	 			}
 	 			]
-	 		},
-	 		{
-	 			block: 'mnu',
-	 			tag: 'ul',
-	 			content: [
-	 			{
-	 				elem: 'li',
-	 				elemMods: {theme: 'trofey'},
-	 				tag: 'li',
-	 				content: [
-	 				{
-	 					elem : 'a',
-	 					tag: 'a',
-	 					attrs: {href: '#'},
-	 					content : ['Главная']
-	 				}
-	 				]
-	 			},
-	 			{
-	 				elem: 'li',
-	 				elemMods: {theme: 'trofey'},
-	 				tag: 'li',
-	 				content: [
-	 				{
-	 					elem : 'a',
-	 					tag: 'a',
-	 					attrs: {href: '#'},
-	 					content : ['Колеса']
-	 				}
-	 				]
-	 			},
-	 			{
-	 				elem: 'li',
-	 				elemMods: {theme: 'trofey'},
-	 				tag: 'li',
-	 				content: [
-	 				{
-	 					elem : 'a',
-	 					tag: 'a',
-	 					attrs: {href: '#'},
-	 					content : ['Шины']
-	 				}
-	 				]
-	 			},
-	 			{
-	 				elem: 'li',
-	 				elemMods: {theme: 'trofey'},
-	 				tag: 'li',
-	 				content: [
-	 				{
-	 					elem : 'a',
-	 					tag: 'a',
-	 					attrs: {href: '#'},
-	 					content : ['Компания']
-	 				}
-	 				]
-	 			},
-	 			{
-	 				elem: 'li',
-	 				elemMods: {theme: 'trofey'},
-	 				tag: 'li',
-	 				content: [
-	 				{
-	 					elem : 'a',
-	 					tag: 'a',
-	 					attrs: {href: '#'},
-	 					content : ['Контакты']
-	 				}
-	 				]
-	 			}
-	 			]
+
 	 		}
 	 		]
-
-	 	}
-	 	]
-	 },
-	// ##########################################################
+	 	},
+// ##########################################################
+{
+	block: 'first-screen',
+	content: [
 	{
-		block: 'first-screen',
+		block: 'pjax-container',
 		content: [
 		{
-			block: 'pjax-container',
+			block: 'row',
 			content: [
 			{
-				block: 'row',
+				elem: 'col',
+				elemMods: {mw: 6},
 				content: [
 				{
-					elem: 'col',
-					elemMods: {mw: 6},
-					content: [
-					{
-						block : 'button',
-						mods : { theme : 'trofey', type : 'link' },
-						url : '../../desktop.bundles/themes/themes.html',
-						text : 'Отправить'
-					}
-					]
-				},
-				{
-					elem: 'col',
-					elemMods: {mw: 6},
-					content: []
+					block : 'button',
+					mods : { theme : 'trofey', type : 'link' },
+					url : '#',
+					text : 'Отправить'
 				}
 				]
+			},
+			{
+				elem: 'col',
+				elemMods: {mw: 6},
+				content: []
 			}
 			]
 		}
 		]
-	},
+	}
+	]
+},
+]
+},
 
 
 
@@ -984,87 +1000,90 @@
 ╚═╝  ╚═╝ ╚═════╝    ╚═╝    ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝╚═╝  ╚═══╝   ╚═╝     ╚═╝     ╚═╝  
 */
 {
-	block: 'top-bar',
+	block: 'automagazit777',
 	content: [
 	{
-
-		block: 'top-line',
-		mods: {theme: 'automagazin777'},
+		block: 'top-bar',
 		content: [
 		{
-			elem: 'status',
-			elemMods: {theme: 'automagazin777'},
-			content: 'Город засыпает, просыпаются сеошники...',
-		},
-		{
-			elem: 'mnu',
-			tag: 'ul',
+
+			block: 'top-line',
+			mods: {theme: 'automagazin777'},
 			content: [
 			{
-				elem: 'li',
+				elem: 'status',
 				elemMods: {theme: 'automagazin777'},
-				content: [
-				{
-					block : 'link',
-					mix: {block: 'top-line', elem: 'a'},
-					url : 'tel:+79102200224',
-					content : '8 910 220 02 24'
-				}
-				]
+				content: 'Город засыпает, просыпаются сеошники...',
 			},
 			{
-				elem: 'li',
-				elemMods: {theme: 'automagazin777'},
+				elem: 'mnu',
+				tag: 'ul',
 				content: [
 				{
-					block : 'link',
-					mix: {block: 'top-line', elem: 'a'},
-					url : 'mailto:info@automagazin777.ru',
-					content : 'info@automagazin777.ru'
-				}
-				]
-			},
-			{
-				elem: 'li',
-				elemMods: {theme: 'automagazin777'},
-				content: [
+					elem: 'li',
+					elemMods: {theme: 'automagazin777'},
+					content: [
+					{
+						block : 'link',
+						mix: {block: 'top-line', elem: 'a'},
+						url : 'tel:+79102200224',
+						content : '8 910 220 02 24'
+					}
+					]
+				},
 				{
-					block : 'link',
-					mix: {block: 'top-line', elem: 'a'},
-					url : '#',
-					content : 'Моё сообщество'
+					elem: 'li',
+					elemMods: {theme: 'automagazin777'},
+					content: [
+					{
+						block : 'link',
+						mix: {block: 'top-line', elem: 'a'},
+						url : 'mailto:info@automagazin777.ru',
+						content : 'info@automagazin777.ru'
+					}
+					]
+				},
+				{
+					elem: 'li',
+					elemMods: {theme: 'automagazin777'},
+					content: [
+					{
+						block : 'link',
+						mix: {block: 'top-line', elem: 'a'},
+						url : '#',
+						content : 'Моё сообщество'
+					}
+					]
 				}
 				]
 			}
 			]
-		}
-		]
-	},
-	{
-		block: 'header',
-		mods: {theme: 'automagazin777'},
-		content: [
+		},
 		{
-			block : 'logo',
-			tag: 'a',
-			attrs: {href: '#'},
+			block: 'header',
+			mods: {theme: 'automagazin777'},
 			content: [
 			{
-				block: 'image',
-				mix: {block: 'logo', elem: 'image'},
-				alt: 'alt',
-				url: '../../img/automagazin777__logo.svg',
-			},
-			{
-				elem: 'texts',
-				mix: {block: 'logo', elem: 'texts'},
-				elemMods: {theme: 'automagazin777'},
+				block : 'logo',
+				tag: 'a',
+				attrs: {href: '#'},
 				content: [
 				{
-					elem: 'text',
-					elemMods: {theme: 'automagazin777'},
-					content: 'Автомагазин 777'
+					block: 'image',
+					mix: {block: 'logo', elem: 'image'},
+					alt: 'alt',
+					url: '../../img/automagazin777__logo.svg',
 				},
+				{
+					elem: 'texts',
+					mix: {block: 'logo', elem: 'texts'},
+					elemMods: {theme: 'automagazin777'},
+					content: [
+					{
+						elem: 'text',
+						elemMods: {theme: 'automagazin777'},
+						content: 'Автомагазин 777'
+					},
 					/*{
 						elem: 'desc',
 						mix: {block: 'logo', elem: 'desc'},
@@ -1186,7 +1205,7 @@
 					{
 						block : 'button',
 						mods : { theme : 'automagazin777', type : 'link' },
-						url : '../../desktop.bundles/themes/themes.html',
+						url : '#',
 						text : 'Отправить'
 					}
 					]
@@ -1202,6 +1221,8 @@
 		}
 		]
 	},
+	]
+},
 
 
 
@@ -1444,7 +1465,7 @@
 								mix: {block: 'button', elem: 'fa'},
 								tag: 'i'
 							},
-							url : '../../desktop.bundles/themes/themes.html',
+							url : '#',
 							text : 'Отправить'
 						}
 						]
