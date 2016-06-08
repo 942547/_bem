@@ -1,0 +1,36 @@
+{
+  "name": "bem-grid",
+  "version": "2.3.3",
+  "description": "Flexbox grid on BEM methodology",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bem-incubator/bem-grid.git"
+  },
+  "keywords": [
+    "bem",
+    "lost",
+    "postcss",
+    "flexbox",
+    "grid"
+  ],
+  "authors": [
+    "Anton Winogradov <winogradovaa@gmail.com>"
+  ],
+  "ignore": [
+    "node_modules",
+    "libs"
+  ],
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "MIT",
+  "homepage": "https://github.com/verybigman/bem-grid",
+  "_release": "2.3.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.3.3",
+    "commit": "745c421e0dec6dedc85b81d78823c69cb9e2a543"
+  },
+  "_source": "https://github.com/verybigman/bem-grid.git",
+  "_target": "^2.3.3",
+  "_originalSource": "bem-grid"
+}
