@@ -455,7 +455,7 @@
                 elem: 'li',
                 elemMods: {
                   theme: 'the-sweet',
-                  bacground: 'green'
+                  background: 'green'
                 },
                 tag: 'li',
                 content: [{
@@ -470,7 +470,7 @@
                 elem: 'li',
                 elemMods: {
                   theme: 'the-sweet',
-                  bacground: 'purple'
+                  background: 'purple'
                 },
                 tag: 'li',
                 content: [{
@@ -485,7 +485,7 @@
                 elem: 'li',
                 elemMods: {
                   theme: 'the-sweet',
-                  bacground: 'blue'
+                  background: 'blue'
                 },
                 tag: 'li',
                 content: [{
@@ -500,7 +500,7 @@
                 elem: 'li',
                 elemMods: {
                   theme: 'the-sweet',
-                  bacground: 'dark-blue'
+                  background: 'dark-blue'
                 },
                 tag: 'li',
                 content: [{
@@ -535,7 +535,7 @@
                     mods: {
                       theme: 'the-sweet',
                       type: 'link',
-                      bacground: 'green'
+                      background: 'green'
                     },
                     url: '#',
                     text: 'Отправить'
@@ -544,7 +544,7 @@
                     mods: {
                       theme: 'the-sweet',
                       type: 'link',
-                      bacground: 'purple'
+                      background: 'purple'
                     },
                     url: '#',
                     text: 'Отправить'
@@ -553,7 +553,7 @@
                     mods: {
                       theme: 'the-sweet',
                       type: 'link',
-                      bacground: 'blue'
+                      background: 'blue'
                     },
                     url: '#',
                     text: 'Отправить'
@@ -562,7 +562,7 @@
                     mods: {
                       theme: 'the-sweet',
                       type: 'link',
-                      bacground: 'dark-blue'
+                      background: 'dark-blue'
                     },
                     url: '#',
                     text: 'Отправить'
@@ -1256,6 +1256,12 @@
             block: 'first-screen',
             tag: 'header',
             content: [{
+              block: 'h1',
+              tag: 'h1',
+              content: [
+                'АвтоМагазин 777'
+              ]
+            }, {
               block: 'row',
               content: [{
                 elem: 'col',
@@ -1304,8 +1310,11 @@
                     },
                     // The End Hidden
                     {
-                      elem: 'input',
-                      tag: 'input',
+                      elem: 'textarea',
+                      tag: 'textarea',
+                      elemMods: {
+                        theme: 'automagazin777'
+                      },
                       attrs: {
                         type: 'text',
                         name: 'Вопрос',
@@ -1315,6 +1324,9 @@
                     }, {
                       elem: 'input',
                       tag: 'input',
+                      elemMods: {
+                        theme: 'automagazin777'
+                      },
                       attrs: {
                         type: 'text',
                         name: 'Телефон',
@@ -1325,11 +1337,10 @@
                       block: 'button',
                       mods: {
                         theme: 'automagazin777',
-                        type: 'submit',
-                        bacground: 'red'
+                        type: 'submit'
                       },
                       icon: {
-                        block: 'fa fa-frown-o',
+                        block: 'fa fa-paper-plane-o',
                         mix: {
                           block: 'button',
                           elem: 'fa'
@@ -1337,7 +1348,7 @@
                         tag: 'i'
                       },
                       url: '#',
-                      text: 'Отправить'
+                      text: 'Задать вопрос'
                     }
                   ]
                 }]
@@ -1417,9 +1428,10 @@
             tag: 'section',
             content: [{
               block: 'h2',
+              mods: {theme: 'automagazin777'},
               tag: 'h2',
               content: [
-                'Автомойка 777'
+                'АвтоМойка 777'
               ]
             }, {
               block: 'row',
@@ -1462,6 +1474,9 @@
                     {
                       elem: 'input',
                       tag: 'input',
+                      elemMods: {
+                        theme: 'automagazin777'
+                      },
                       attrs: {
                         type: 'text',
                         name: 'Вопрос',
@@ -1471,6 +1486,9 @@
                     }, {
                       elem: 'input',
                       tag: 'input',
+                      elemMods: {
+                        theme: 'automagazin777'
+                      },
                       attrs: {
                         type: 'text',
                         name: 'Телефон',
@@ -1481,11 +1499,10 @@
                       block: 'button',
                       mods: {
                         theme: 'automagazin777',
-                        type: 'submit',
-                        bacground: 'red'
+                        type: 'submit'
                       },
                       icon: {
-                        block: 'fa fa-frown-o',
+                        block: 'fa fa-paper-plane-o',
                         mix: {
                           block: 'button',
                           elem: 'fa'
@@ -1518,9 +1535,10 @@
             tag: 'section',
             content: [{
               block: 'h2',
+              mods: {theme: 'automagazin777'},
               tag: 'h2',
               content: [
-                'Автомастерская 777'
+                'АвтоМастерская 777'
               ]
             }, {
               block: 'row',
@@ -1590,6 +1608,13 @@
             block: 'footer',
             tag: 'footer',
             content: [{
+            	block: 'h2',
+            	tag: 'h2',
+            	mods: {theme: 'automagazin777', background: 'red'},
+            	content: [
+            		'Есть жалоба? Разберёмся'
+            	]
+            }, {
               block: 'form',
               tag: 'form',
               content: [
@@ -1621,8 +1646,11 @@
                 },
                 // The End Hidden
                 {
-                  elem: 'input',
-                  tag: 'input',
+                  elem: 'textarea',
+                  tag: 'textarea',
+                  elemMods: {
+                    theme: 'automagazin777'
+                  },
                   attrs: {
                     type: 'text',
                     name: 'Вопрос',
@@ -1630,20 +1658,11 @@
                     required: ''
                   }
                 }, {
-                  elem: 'input',
-                  tag: 'input',
-                  attrs: {
-                    type: 'text',
-                    name: 'Телефон',
-                    placeholder: 'Ваш номер телефона',
-                    required: ''
-                  }
-                }, {
                   block: 'button',
                   mods: {
                     theme: 'automagazin777',
                     type: 'submit',
-                    bacground: 'red'
+                    background: 'red'
                   },
                   icon: {
                     block: 'fa fa-frown-o',
@@ -1654,7 +1673,7 @@
                     tag: 'i'
                   },
                   url: '#',
-                  text: 'Отправить'
+                  text: 'Пожаловаться'
                 }
               ]
             }]
