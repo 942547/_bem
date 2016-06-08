@@ -1179,7 +1179,7 @@
                 },
                 alt: 'alt',
                 url: 'https://img-fotki.yandex.ru/get/16159/259818507.0/0_130be6_4116d8e7_S',
-              }, {
+              }, /*{
                 elem: 'texts',
                 mix: {
                   block: 'logo',
@@ -1195,7 +1195,7 @@
                   },
                   content: 'Автомагазин 777'
                 }]
-              }]
+              }*/]
             }, {
               block: 'mnu',
               mods: {
@@ -1257,6 +1257,9 @@
             tag: 'header',
             content: [{
               block: 'h1',
+              mods: {
+                theme: 'automagazin777'
+              },
               tag: 'h1',
               content: [
                 'АвтоМагазин 777'
@@ -1269,88 +1272,87 @@
                   mw: 6
                 },
                 content: [{
-                  block: 'h1',
-                  content: [
-                    'Узнать наличие запчасти'
-                  ]
-                }, {
-                  block: 'desc',
-                  content: [
-                    'сэкономите своё время. Менеджер перезвонит с уже готовым решением'
-                  ]
-                }, {
-                  block: 'form',
-                  tag: 'form',
-                  content: [
-                    // Hidden
-                    {
-                      elem: 'input',
-                      tag: 'input',
-                      attrs: {
-                        type: 'hidden',
-                        name: 'project_name',
-                        value: 'automagazin777.ru'
-                      }
-                    }, {
-                      elem: 'input',
-                      tag: 'input',
-                      attrs: {
-                        type: 'hidden',
-                        name: 'admin_email',
-                        value: '942547@gmail.com'
-                      }
-                    }, {
-                      elem: 'input',
-                      tag: 'input',
-                      attrs: {
-                        type: 'hidden',
-                        name: 'form_subject',
-                        value: 'Вопрос по запчастям'
-                      }
-                    },
-                    // The End Hidden
-                    {
-                      elem: 'textarea',
-                      tag: 'textarea',
-                      elemMods: {
-                        theme: 'automagazin777'
+                  block: 'side',
+                  mods: {align: 'center'},
+                  content: [{
+                    block: 'h1',
+                    content: [
+                      'Узнать наличие запчасти'
+                    ]
+                  }, {
+                    block: 'form',
+                    tag: 'form',
+                    content: [
+                      // Hidden
+                      {
+                        elem: 'input',
+                        tag: 'input',
+                        attrs: {
+                          type: 'hidden',
+                          name: 'project_name',
+                          value: 'automagazin777.ru'
+                        }
+                      }, {
+                        elem: 'input',
+                        tag: 'input',
+                        attrs: {
+                          type: 'hidden',
+                          name: 'admin_email',
+                          value: '942547@gmail.com'
+                        }
+                      }, {
+                        elem: 'input',
+                        tag: 'input',
+                        attrs: {
+                          type: 'hidden',
+                          name: 'form_subject',
+                          value: 'Вопрос по запчастям'
+                        }
                       },
-                      attrs: {
-                        type: 'text',
-                        name: 'Вопрос',
-                        placeholder: 'Ваш вопрос',
-                        required: ''
-                      }
-                    }, {
-                      elem: 'input',
-                      tag: 'input',
-                      elemMods: {
-                        theme: 'automagazin777'
-                      },
-                      attrs: {
-                        type: 'text',
-                        name: 'Телефон',
-                        placeholder: 'Ваш номер телефона',
-                        required: ''
-                      }
-                    }, {
-                      block: 'button',
-                      mods: {
-                        theme: 'automagazin777',
-                        type: 'submit'
-                      },
-                      icon: {
-                        block: 'fa fa-paper-plane-o',
-                        mix: {
-                          block: 'button',
-                          elem: 'fa'
+                      // The End Hidden
+                      {
+                        elem: 'textarea',
+                        tag: 'textarea',
+                        elemMods: {
+                          theme: 'automagazin777'
                         },
-                        tag: 'i'
-                      },
-                      url: '#',
-                      text: 'Задать вопрос'
-                    }
-                  ]
+                        attrs: {
+                          type: 'text',
+                          name: 'Вопрос',
+                          placeholder: 'Ваш вопрос',
+                          required: ''
+                        }
+                      }, {
+                        elem: 'input',
+                        tag: 'input',
+                        elemMods: {
+                          theme: 'automagazin777'
+                        },
+                        attrs: {
+                          type: 'text',
+                          name: 'Телефон',
+                          placeholder: 'Ваш номер телефона',
+                          required: ''
+                        }
+                      }, {
+                        block: 'button',
+                        mods: {
+                          theme: 'automagazin777',
+                          type: 'submit'
+                        },
+                        icon: {
+                          block: 'fa fa-paper-plane-o',
+                          mix: {
+                            block: 'button',
+                            elem: 'fa'
+                          },
+                          tag: 'i'
+                        },
+                        url: '#',
+                        text: 'Задать вопрос'
+                      }
+                    ]
+                  }]
                 }]
               }, {
                 elem: 'col',
@@ -1428,7 +1430,9 @@
             tag: 'section',
             content: [{
               block: 'h2',
-              mods: {theme: 'automagazin777'},
+              mods: {
+                theme: 'automagazin777'
+              },
               tag: 'h2',
               content: [
                 'АвтоМойка 777'
@@ -1535,7 +1539,9 @@
             tag: 'section',
             content: [{
               block: 'h2',
-              mods: {theme: 'automagazin777'},
+              mods: {
+                theme: 'automagazin777'
+              },
               tag: 'h2',
               content: [
                 'АвтоМастерская 777'
@@ -1608,12 +1614,15 @@
             block: 'footer',
             tag: 'footer',
             content: [{
-            	block: 'h2',
-            	tag: 'h2',
-            	mods: {theme: 'automagazin777', background: 'red'},
-            	content: [
-            		'Есть жалоба? Разберёмся'
-            	]
+              block: 'h2',
+              tag: 'h2',
+              mods: {
+                theme: 'automagazin777',
+                background: 'red'
+              },
+              content: [
+                'Есть жалоба? Разберёмся'
+              ]
             }, {
               block: 'form',
               tag: 'form',
