@@ -1000,7 +1000,7 @@
 ╚═╝  ╚═╝ ╚═════╝    ╚═╝    ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝╚═╝  ╚═══╝   ╚═╝     ╚═╝     ╚═╝  
 */
 {
-	block: 'automagazit777',
+	block: 'automagazin777',
 	content: [
 	{
 		block: 'top-bar',
@@ -1104,7 +1104,7 @@
 					tag: 'a',
 					elemMods: {theme: 'automagazin777'},
 					attrs: {href: 'tel:+74722577777'},
-					content : '+7(4722)57-77-77'
+					content : '8 4722 57 77 77'
 				},
 				{
 					elem: 'desc',
