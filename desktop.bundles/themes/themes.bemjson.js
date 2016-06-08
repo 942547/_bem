@@ -118,6 +118,7 @@
 			},
 			{
 				block: 'phone',
+				mix: {block: 'phone', elem: 'align-center'},
 				content: [
 				{
 					elem : 'number',
@@ -616,6 +617,7 @@
 			},
 			{
 				block: 'phone',
+				mix: {block: 'phone', elem: 'align-center'},
 				content: [
 				{
 					elem : 'number',
@@ -1026,8 +1028,8 @@
 					{
 						block : 'link',
 						mix: {block: 'top-line', elem: 'a'},
-						url : 'tel:+79102200224',
-						content : '8 910 220 02 24'
+						url : 'tel:+74722577777',
+						content : '8 4722 577 777'
 					}
 					]
 				},
@@ -1072,7 +1074,7 @@
 					block: 'image',
 					mix: {block: 'logo', elem: 'image'},
 					alt: 'alt',
-					url: '../../img/automagazin777__logo.svg',
+					url: 'https://img-fotki.yandex.ru/get/16159/259818507.0/0_130be6_4116d8e7_S',
 				},
 				{
 					elem: 'texts',
@@ -1083,37 +1085,14 @@
 						elem: 'text',
 						elemMods: {theme: 'automagazin777'},
 						content: 'Автомагазин 777'
-					},
-					/*{
-						elem: 'desc',
-						mix: {block: 'logo', elem: 'desc'},
-						elemMods: {theme: 'automagazin777'},
-						content: [
-						'ресторан и пиццерия'
-						]
-					}*/
+					}
 					]
 				}
 				]
 			},
 			{
-				block: 'phone',
-				content: [
-				{
-					elem : 'number',
-					tag: 'a',
-					elemMods: {theme: 'automagazin777'},
-					attrs: {href: 'tel:+74722577777'},
-					content : '8 4722 57 77 77'
-				},
-				{
-					elem: 'desc',
-					content: ['пн-вс 12:00-00:00']
-				}
-				]
-			},
-			{
 				block: 'mnu',
+				mods: {theme: 'automagazin777'},
 				tag: 'ul',
 				content: [
 				{
@@ -1125,7 +1104,7 @@
 						elem : 'a',
 						tag: 'a',
 						attrs: {href: '#'},
-						content : ['Главная']
+						content : ['АвтоМагазин']
 					}
 					]
 				},
@@ -1138,7 +1117,7 @@
 						elem : 'a',
 						tag: 'a',
 						attrs: {href: '#'},
-						content : ['Колеса']
+						content : ['АвтоМойка']
 					}
 					]
 				},
@@ -1151,33 +1130,7 @@
 						elem : 'a',
 						tag: 'a',
 						attrs: {href: '#'},
-						content : ['Шины']
-					}
-					]
-				},
-				{
-					elem: 'li',
-					elemMods: {theme: 'automagazin777'},
-					tag: 'li',
-					content: [
-					{
-						elem : 'a',
-						tag: 'a',
-						attrs: {href: '#'},
-						content : ['Компания']
-					}
-					]
-				},
-				{
-					elem: 'li',
-					elemMods: {theme: 'automagazin777'},
-					tag: 'li',
-					content: [
-					{
-						elem : 'a',
-						tag: 'a',
-						attrs: {href: '#'},
-						content : ['Контакты']
+						content : ['АвтоСервис']
 					}
 					]
 				}
@@ -1203,25 +1156,79 @@
 					elemMods: {mw: 6},
 					content: [
 					{
-						block : 'button',
-						mods : { theme : 'automagazin777', type : 'link' },
-						url : '#',
-						text : 'Отправить'
+						block: 'h1',
+						content: [
+							'Узнать наличие запчасти'
+						]
+					},
+					{
+						block: 'desc',
+						content: [
+							'сэкономите своё время. Менеджер перезвонит с уже готовым решением'
+						]
+					},
+					{
+						block: 'form',
+						content: [
+							'form'
+						]
+					}
+				]
+			},
+			{
+				elem: 'col',
+				elemMods: {mw: 6},
+				content: [
+				{
+					block: 'phone',
+					content: [
+					{
+						elem : 'number',
+						tag: 'a',
+						elemMods: {theme: 'automagazin777'},
+						attrs: {href: 'tel:+74722577777'},
+						content : '8 4722 577 777'
 					}
 					]
 				},
 				{
-					elem: 'col',
-					elemMods: {mw: 6},
-					content: []
+					block: 'address',
+					content: [
+					'ул. Губкина, 52'
+					]
+				},
+				{
+					block: 'mode',
+					content: [
+					'с 10:00 до 18:00'
+					]
+				},
+				{
+					block: 'link',
+					url: '#',
+					content: [
+					{
+						block: 'image',
+						url: 'https://img-fotki.yandex.ru/get/16159/259818507.0/0_130be6_4116d8e7_S',
+						alt: 'alt'
+					}
+					]
+				},
+				{
+					block: 'desc',
+					content: [
+					'Рядом с остановкой «Спортивная»'
+					]
 				}
 				]
 			}
 			]
 		}
 		]
-	},
+	}
 	]
+},
+]
 },
 
 
@@ -1329,6 +1336,7 @@
 			},
 			{
 				block: 'phone',
+				mix: {block: 'phone', elem: 'align-center'},
 				content: [
 				{
 					elem : 'number',
