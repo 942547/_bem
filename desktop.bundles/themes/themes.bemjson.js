@@ -1251,9 +1251,10 @@
         },
         // ##########################################################
         {
-          block: 'first-screen',
+          block: 'pjax-container',
           content: [{
-            block: 'pjax-container',
+            block: 'first-screen',
+            tag: 'header',
             content: [{
               block: 'row',
               content: [{
@@ -1384,9 +1385,277 @@
                 }]
               }]
             }, {
-              block: 'screen2',
+              block: 'h1',
+              tag: 'h1',
               content: [
-                'screen2'
+                'Группы запчастей и товаров'
+              ]
+            }, {
+              block: 'row',
+              content: [{
+                elem: 'col',
+                elemMods: {
+                  mw: 4
+                },
+                content: ['Колонка 1']
+              }, {
+                elem: 'col',
+                elemMods: {
+                  mw: 4
+                },
+                content: ['Колонка 2']
+              }, {
+                elem: 'col',
+                elemMods: {
+                  mw: 4
+                },
+                content: ['Колонка 3']
+              }]
+            }]
+          }, {
+            block: 'screen2',
+            tag: 'section',
+            content: [{
+              block: 'h2',
+              tag: 'h2',
+              content: [
+                'Автомойка 777'
+              ]
+            }, {
+              block: 'row',
+              content: [{
+                elem: 'col',
+                elemMods: {
+                  mw: 6
+                },
+                content: [{
+                  block: 'form',
+                  tag: 'form',
+                  content: [
+                    // Hidden
+                    {
+                      elem: 'input',
+                      tag: 'input',
+                      attrs: {
+                        type: 'hidden',
+                        name: 'project_name',
+                        value: 'automagazin777.ru'
+                      }
+                    }, {
+                      elem: 'input',
+                      tag: 'input',
+                      attrs: {
+                        type: 'hidden',
+                        name: 'admin_email',
+                        value: '942547@gmail.com'
+                      }
+                    }, {
+                      elem: 'input',
+                      tag: 'input',
+                      attrs: {
+                        type: 'hidden',
+                        name: 'form_subject',
+                        value: 'Вопрос по запчастям'
+                      }
+                    },
+                    // The End Hidden
+                    {
+                      elem: 'input',
+                      tag: 'input',
+                      attrs: {
+                        type: 'text',
+                        name: 'Вопрос',
+                        placeholder: 'Ваш вопрос',
+                        required: ''
+                      }
+                    }, {
+                      elem: 'input',
+                      tag: 'input',
+                      attrs: {
+                        type: 'text',
+                        name: 'Телефон',
+                        placeholder: 'Ваш номер телефона',
+                        required: ''
+                      }
+                    }, {
+                      block: 'button',
+                      mods: {
+                        theme: 'automagazin777',
+                        type: 'submit',
+                        bacground: 'red'
+                      },
+                      icon: {
+                        block: 'fa fa-frown-o',
+                        mix: {
+                          block: 'button',
+                          elem: 'fa'
+                        },
+                        tag: 'i'
+                      },
+                      url: '#',
+                      text: 'Отправить'
+                    }
+                  ]
+                }]
+              }, {
+                elem: 'col',
+                elemMods: {
+                  mw: 6
+                },
+                content: [{
+                  block: 'link',
+                  url: '#',
+                  content: [{
+                    block: 'image',
+                    url: 'https://img-fotki.yandex.ru/get/16159/259818507.0/0_130be6_4116d8e7_S',
+                    alt: 'alt'
+                  }]
+                }]
+              }]
+            }]
+          }, {
+            block: 'screen3',
+            tag: 'section',
+            content: [{
+              block: 'h2',
+              tag: 'h2',
+              content: [
+                'Автомастерская 777'
+              ]
+            }, {
+              block: 'row',
+              content: [{
+                elem: 'col',
+                elemMods: {
+                  mw: 6
+                },
+                content: [{
+                  block: 'h3',
+                  tag: 'h3',
+                  content: [
+                    'Услуги:'
+                  ]
+                }, {
+                  block: 'ul',
+                  tag: 'ul',
+                  content: [{
+                    block: 'li',
+                    tag: 'li',
+                    content: [
+                      'Пункт'
+                    ]
+                  }, {
+                    block: 'li',
+                    tag: 'li',
+                    content: [
+                      'Пункт'
+                    ]
+                  }, {
+                    block: 'li',
+                    tag: 'li',
+                    content: [
+                      'Пункт'
+                    ]
+                  }, {
+                    block: 'li',
+                    tag: 'li',
+                    content: [
+                      'Пункт'
+                    ]
+                  }, {
+                    block: 'li',
+                    tag: 'li',
+                    content: [
+                      'Пункт'
+                    ]
+                  }]
+                }]
+              }, {
+                elem: 'col',
+                elemMods: {
+                  mw: 6
+                },
+                content: [{
+                  block: 'link',
+                  url: '#',
+                  content: [{
+                    block: 'image',
+                    url: 'https://img-fotki.yandex.ru/get/16159/259818507.0/0_130be6_4116d8e7_S',
+                    alt: 'alt'
+                  }]
+                }]
+              }]
+            }]
+          }, {
+            block: 'footer',
+            tag: 'footer',
+            content: [{
+              block: 'form',
+              tag: 'form',
+              content: [
+                // Hidden
+                {
+                  elem: 'input',
+                  tag: 'input',
+                  attrs: {
+                    type: 'hidden',
+                    name: 'project_name',
+                    value: 'automagazin777.ru'
+                  }
+                }, {
+                  elem: 'input',
+                  tag: 'input',
+                  attrs: {
+                    type: 'hidden',
+                    name: 'admin_email',
+                    value: '942547@gmail.com'
+                  }
+                }, {
+                  elem: 'input',
+                  tag: 'input',
+                  attrs: {
+                    type: 'hidden',
+                    name: 'form_subject',
+                    value: 'Вопрос по запчастям'
+                  }
+                },
+                // The End Hidden
+                {
+                  elem: 'input',
+                  tag: 'input',
+                  attrs: {
+                    type: 'text',
+                    name: 'Вопрос',
+                    placeholder: 'Ваш вопрос',
+                    required: ''
+                  }
+                }, {
+                  elem: 'input',
+                  tag: 'input',
+                  attrs: {
+                    type: 'text',
+                    name: 'Телефон',
+                    placeholder: 'Ваш номер телефона',
+                    required: ''
+                  }
+                }, {
+                  block: 'button',
+                  mods: {
+                    theme: 'automagazin777',
+                    type: 'submit',
+                    bacground: 'red'
+                  },
+                  icon: {
+                    block: 'fa fa-frown-o',
+                    mix: {
+                      block: 'button',
+                      elem: 'fa'
+                    },
+                    tag: 'i'
+                  },
+                  url: '#',
+                  text: 'Отправить'
+                }
               ]
             }]
           }]
